@@ -3,7 +3,9 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("task2")
+project ("task8")
 
 # Включите подпроекты.
+add_subdirectory ("src_lib")
+
 add_subdirectory ("src_exe")
