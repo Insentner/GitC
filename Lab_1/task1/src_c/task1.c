@@ -12,5 +12,4 @@ void main()
 	y = 2 * pow(cos(x), 2) - 1;
 	printf("f(x)= %.4lf\n", y);
 	system("pause");
-	return 0;
 }
