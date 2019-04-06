@@ -11,7 +11,7 @@ int main(void)
 	int n;
 	int k;
 	double eps;
-	for (;;)
+	do
 	{
 		printf("press to select task:\n1 - for select task 1;\n2 - for select task 2;\n3 - for select task 3;\n4 - for select task 4;\n5 - for select task 5;\n6 - for exit.\n");
 		switch (_getch())
@@ -54,7 +54,7 @@ int main(void)
 		}
 		system("pause");
 		system("cls");
-	}
+	} while (1);
 	system("pause");
 	return 0;
 }
