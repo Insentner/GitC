@@ -1,4 +1,4 @@
-#include <head.h>
+#include <stdio.h>
 
 double summ(int n);
 double summ2(double eps);

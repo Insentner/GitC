@@ -6,7 +6,7 @@ cmake_minimum_required (VERSION 3.8)
 # Добавьте источник в исполняемый файл этого проекта.
 add_executable (lab3_do...while "")
 
-target_sources (lab3_do...while PRIVATE "../src_exe/main.c" "../src_exe/summ.c" "../src_exe/summ2.c" "../src_exe/print.c" "../src_exe/findFirstElement.c" "../src_exe/findFirstNegativeElement.c")
+target_sources (lab3_do...while PRIVATE "../src_exe/main.c")
 
-target_include_directories(lab3_do...while PRIVATE "../includes")
+target_link_libraries(lab3_do...while lab3_do...while_lib)
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.
