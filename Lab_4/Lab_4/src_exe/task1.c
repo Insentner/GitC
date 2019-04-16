@@ -1,10 +1,10 @@
 ﻿#include <stdio.h>
 #include <math.h>
 
-double X;
+double X=9;
 double res;
 static double *x=&X;
-double *result = &result;
+double *result = &res;
 
 void f(static double *x, double *result)
 {
