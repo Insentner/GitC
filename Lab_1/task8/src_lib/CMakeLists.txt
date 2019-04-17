@@ -1,7 +1,4 @@
-﻿# CMakeList.txt: проект CMake для task8; включите исходный код и определения,
-# укажите здесь логику для конкретного проекта.
-#
-cmake_minimum_required (VERSION 3.8)
+﻿cmake_minimum_required (VERSION 3.8)
 
 add_library(task8_lib STATIC "")
 
