@@ -1,4 +1,4 @@
-﻿#include <math.h>
+﻿#include <head.h>
 
 void f(const double *x, double *result)
 {
