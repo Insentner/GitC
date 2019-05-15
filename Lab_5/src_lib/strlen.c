@@ -1,11 +1,12 @@
-#include <head.h>
+//#include <head.h>
 
-int strlen(const char *str)
+//int strlen(const char *str)
+//{
+//	return (*str) ? strlen(++str) + 1 : 0;
+//}
+int strlen(const char *str) 
 {
-	int len = 0;
-	while (*(str + len) != '\0');
-	{
-		len++;
-	}
-	return len;
+	register const char *s = str; 
+	while (*str++); 
+	return str - s - 1; 
 }

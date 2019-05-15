@@ -1,20 +1,24 @@
+#include <head.h>
 
-
-
-_Bool podstrahuy(const char *str, const char *substr)
+_Bool istr(const char *str, const char *substr)
 {
-	while ()
+	int i=0;
+	while (*(str + i) == *(substr + i) && *(str + i) != '\0')
 	{
-
+	    i++;
 	}
+	return (strlen(substr) == i) ? 1 : 0;
 }
 
 char *find(const char *str, const char *substr)
 {
-	if (podstrahuy(*str, *substr))
+	while (*str)
 	{
-
+		if (istr(str, substr))
+		{
+		    return str;
+		}
+		*str++;
 	}
-	else
-
+	return 0;
 }
