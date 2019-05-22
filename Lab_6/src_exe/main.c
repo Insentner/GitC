@@ -83,13 +83,16 @@ void write1(void)
 void write2(void)
 {
 	struct ZACH Z2;
-	strcpy(Z2.firstName, "");
-	strcpy(Z2.lastName, "");
-	struct semInf sem1;
-	sem1.year = 2017;
-	sem1.sem = 1;
-	struct subInf sub1;
-	strcpy(sub1.name, "");
+	strcpy(Z2.firstName, "Вася");
+	strcpy(Z2.lastName, "Машина");
+	Z2.semI[0].sem = 1;
+	Z2.semI[0].year = 2017;
+	strcpy(Z2.semI[0].theor[0].name, "Введение в специальность");
+	strcpy(Z2.semI[0].theor[0].teach, "Гончаров");
+	strcpy(Z2.semI[0].theor[0].time, "22.12.17");
+	Z2.semI[0].theor[0].str.type = notDiff;
+	Z2.semI[0].theor[0].str.value.acc = 1;
+
 
 }
 void main(void)
