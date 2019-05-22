@@ -351,6 +351,22 @@ void main(void)
 	setlocale(LC_ALL, "Rus");
 	struct ZACH *Z1 = write1();
 	struct ZACH *Z2 = write2();
+	do
+	{
+		switch (_getch())
+		{
+		case '1':
+			system("cls");
+			printf("%d %d\n", Z1->semI[0].sem, Z2->semI[0].sem);
+			break;
+		case '2':
+			system("cls");
 
-	
+			break;
+		case '3':
+			exit(0);
+		}
+		system("pause");
+		system("cls");
+	} while (1);
 }
