@@ -37,5 +37,7 @@ struct ZACH
 {
 	char firstName[60];
 	char lastName[60];
+	char dadName[60];
+	char number[15];
 	struct semInf semI[4];
 };
