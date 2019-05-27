@@ -1,16 +1,15 @@
-﻿#include <stdio.h>
-#include <head.h>
+﻿#include <head.h>
 
 void main(void)
 {
 	do
 	{
-		printf("press to select:\n1 - demonstration task2\n2 - exit");
+		printf("press to select:\n1 - demonstration task2\n2 - exit\n");
 		switch (_getch())
 		{
 		case'1':
 			system("cls");
-			sortStackArray();
+			sortHeapArray();
 			break;
 		case'2':
 			exit(0);

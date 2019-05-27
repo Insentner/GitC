@@ -1,8 +1,8 @@
 #pragma once
-#include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-void readArray(int *arr, int n);
+void sortHeapArray();
 void sort(int *arr, int n);
-void sortStackArray();
+void readArray(int *arr, int n);
 void writeArray(int *arr, int n);
