@@ -2,6 +2,6 @@
 
 add_library(lab2_lib STATIC "")
 
-target_include_directories(lab2_lib PRIVATE "../includes/head.h")
+target_include_directories(lab2_lib PUBLIC "../includes")
 
-target_sources(lab2_lib PRIVATE "../src_lib/task2_f.c" "../src_lib/task1_ar.c")
+target_sources(lab2_lib PRIVATE "task2_f.c" "task1_ar.c")

@@ -1,7 +1,7 @@
-﻿#include <stdio.h>
+﻿#include <head.h>
 void main(void)
 {
-	const double x = 9;
+	double x = 9;
 	double result;
 	f(&x, &result);
 	printf("x=%.4lf\nf(x)=%.4lf\nx=", x, result);
