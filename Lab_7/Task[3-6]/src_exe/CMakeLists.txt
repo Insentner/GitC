@@ -1,2 +1,2 @@
-add_executable(lab5 "main.c")
-target_link_libraries(lab5 PRIVATE lab5_lib)
+add_executable(lab7_3 "main.c")
+target_link_libraries(lab7_3 PRIVATE lab7_3_lib)
