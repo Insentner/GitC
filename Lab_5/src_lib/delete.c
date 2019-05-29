@@ -2,12 +2,17 @@
 
 void delete(char *str, const char *substr)
 {
-	int i = 0;
+	int i = 0, j = 0;
 	str = find(str, substr);
-	while (*(str + strlen(substr) + i) != '\0')
+	while (*(str + i) != '\0' && i < strlen(substr))
 	{
-		*(str+i) =*(str + strlen(substr) + i);
-		*(str + strlen(substr) + i) = '\0';
+        *(str + i) = '\0';
 		i++;
+	}
+	while (*(str + j + i) != '\0')
+	{
+		*(str + j) =*(str + j + i);
+		*(str + j + i) = '\0';
+		j++;
 	}
 }

@@ -2,8 +2,8 @@
 
 void main(void)
 {
-	const char str[]="ooooouggppppp";
-	const char substr[]="ugg";
+	const char str[]="1234567890";
+	const char substr[]="456";
 	char dest[] = "";
 	int len = 5;
 
