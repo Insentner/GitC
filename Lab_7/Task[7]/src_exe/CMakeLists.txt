@@ -1,3 +1,3 @@
-add_executable(lab6 "")
-target_include_directories(lab6 PUBLIC "../includes")
-target_sources(lab6 PRIVATE "main.c")
+add_executable(lab7_4 "")
+target_include_directories(lab7_4 PUBLIC "../includes")
+target_sources(lab7_4 PRIVATE "main.c")

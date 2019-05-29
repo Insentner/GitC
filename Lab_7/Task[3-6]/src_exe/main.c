@@ -1,9 +1,11 @@
 #include <head.h>
-
 void main(void)
 {
 	char *str = (char *)malloc(sizeof("1234567890"));
 	char *substr = (char *)malloc(sizeof("456"));
+	//char *cpy = (char *)malloc(sizeof("1234567890"));
+	//char *cat = (char *)malloc(sizeof("1234567890") + sizeof("456"));
+	//char *ins = (char *)malloc(sizeof("1234567890") + sizeof("456"));
 	substr = "456";
 	str = "1234567890";
 	do

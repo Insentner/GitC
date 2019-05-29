@@ -19,7 +19,5 @@ char *delete(char *str, const char *substr)
 		*(s + j + i) = '\0';
 		j++;
 	}
-	//*s = (char *)realloc(str, strlen(str)*sizeof(char)); //i don't know
-	//str = s;
 	return str;
 }
