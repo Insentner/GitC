@@ -2,18 +2,20 @@
 
 char *strcat(const char *first, const char *second)
 {
-	//int i = 0;
-	//int j = 0;
-	//while (i < strlen(first) && i<len)
-	//{
-	//	*(dest + i) = *(first + i);
-	//	++i;
-	//}
-	//while (i < len && i< strlen(first) + strlen(second))
-	//{
-	//	*(dest + i) = *(second + j);
-	//	++i;
-	//	++j;
-	//}
-	//*(dest + i) = '\0';
+	int i = 0;
+	int j = 0;
+	char *newstr = (char *)malloc(sizeof(first) + sizeof(second) - 1);
+	while (i < strlen(first))
+	{
+		*(newstr + i) = *(first + i);
+		++i;
+	}
+	while (j < strlen(second))
+	{
+		*(newstr + i) = *(second + j);
+		++i;
+		++j;
+	}
+	*(newstr + i) = '\0';
+	return newstr;
 }

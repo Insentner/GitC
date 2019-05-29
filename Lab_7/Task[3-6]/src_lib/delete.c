@@ -3,20 +3,23 @@
 char *delete(char *str, const char *substr)
 {
 	int i = 0, j = 0;
-	const char *s = find(str, substr);
-	char *st = (char *)calloc(strlen(str), sizeof(char));
-	while (i < sizeof(st)/sizeof(char)  && i < s - str)
+	char *s = find(str, substr);
+	if (s == NULL)
 	{
-		*(st + i) = *(str + i);
+		return "error";
+	}
+	while (*(s + i) && i < strlen(substr))
+	{
+		*(s + i) = '\0';
 		i++;
 	}
-	while (*(str + i + j + strlen(substr)) != '\0' /*&& i < strlen(substr)*/)
+	while (*(s + j + i))
 	{
-		*(st + j + i) = *(str + i + j + strlen(substr));
+		*(s + j) = *(s + j + i);
+		*(s + j + i) = '\0';
 		j++;
 	}
-	*str = "";
-	*str = (char **)realloc(*str, strlen(st) * sizeof(char)+1);
-
+	//*s = (char *)realloc(str, strlen(str)*sizeof(char)); //i don't know
+	//str = s;
 	return str;
 }
