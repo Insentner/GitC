@@ -6,7 +6,7 @@ char *delete(char *str, const char *substr)
 	char *s = find(str, substr);
 	if (s == NULL)
 	{
-		return "error";
+		return "error: not found";
 	}
 	while (*(s + i) && i < strlen(substr))
 	{

@@ -4,7 +4,7 @@ char *insert(const char *src, const char *str, int index)
 {
 	int i = 0;
 	int j = 0;
-	char *newstr = (char *)malloc(sizeof(src) + sizeof(str) - 1);
+	char *newstr = (char *)malloc((strlen(src)+strlen(str)+1)*sizeof(char));
 	if (index > strlen(newstr))
 	{
 		return "error";

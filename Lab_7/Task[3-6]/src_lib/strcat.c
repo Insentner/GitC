@@ -4,7 +4,7 @@ char *strcat(const char *first, const char *second)
 {
 	int i = 0;
 	int j = 0;
-	char *newstr = (char *)malloc(sizeof(first) + sizeof(second) - 1);
+	char *newstr = (char *)malloc((strlen(first) + strlen(second) + 1) * sizeof(char));
 	while (i < strlen(first))
 	{
 		*(newstr + i) = *(first + i);

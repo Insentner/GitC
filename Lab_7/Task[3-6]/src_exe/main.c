@@ -1,13 +1,20 @@
 #include <head.h>
 void main(void)
 {
-	char *str = (char *)malloc(sizeof("1234567890"));
-	char *substr = (char *)malloc(sizeof("456"));
-	//char *cpy = (char *)malloc(sizeof("1234567890"));
-	//char *cat = (char *)malloc(sizeof("1234567890") + sizeof("456"));
-	//char *ins = (char *)malloc(sizeof("1234567890") + sizeof("456"));
-	substr = "456";
-	str = "1234567890";
+	static char* s = "1234567890";
+	static char* su = "456";
+	char* str = NULL;
+	char* substr = NULL;
+	char* cpy = NULL;
+	char* cat = NULL;
+	char* ins = NULL;
+	free(ins);
+	free(cat);
+	free(cpy);
+	free(substr);
+	free(str);
+	str = strcpy(s);
+	substr = strcpy(su);
 	do
 	{
 		printf("press to select:\n1 - delete\n2 - strcpy\n3 - strcat\n4 - insert\n5 - exit\n");
@@ -19,15 +26,21 @@ void main(void)
 			break;
 		case'2':
 			system("cls");
-			printf("selected strcpy.\n%s\n", strcpy(str));
+			cpy = strcpy(str);
+			printf("selected strcpy.\n%s\n", cpy);
+			free(cpy);
 			break;
 		case'3':
 			system("cls");
-			printf("selected strcat.\n%s\n", strcat(str, substr));
+			cat = strcat(str, substr);
+			printf("selected strcat.\n%s\n", cat);
+			free(cat);
 			break;
 		case'4':
 			system("cls");
-			printf("selected insert.\n%s\n", insert(str, substr, 4));
+			ins = insert(str, substr, 4);
+			printf("selected insert.\n%s\n", ins);
+			free(ins);
 			break;
 		case'5':
 			free(substr);
