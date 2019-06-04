@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <string.h>
-#include <locale.h>
 #include <head.h>
 
 struct ZACH *write1(void)
