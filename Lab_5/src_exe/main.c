@@ -14,8 +14,6 @@ void main(void)
 		{
 		case'1':
 		    system("cls");
-			/*printf("Enter str to find lenght:\n");
-			scanf_s("%s", &str);*/
 			printf("lenght str is %d\n", strlen(str));
 			break;
 		case'2':

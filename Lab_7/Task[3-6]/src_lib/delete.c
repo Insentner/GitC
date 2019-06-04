@@ -1,5 +1,4 @@
 #include <head.h>
-//everything is bad
 char *delete(char *str, const char *substr)
 {
 	int i = 0, j = 0;
