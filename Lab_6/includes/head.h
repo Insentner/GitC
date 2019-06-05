@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <string.h>
+#include <locale.h>
+
 enum mark
 {
 	Bad = 2, Norm, Good, Excel

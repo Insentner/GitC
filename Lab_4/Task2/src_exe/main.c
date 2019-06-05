@@ -1,5 +1,4 @@
-﻿#include <stdio.h>
-#include <head.h>
+﻿#include <head.h>
 
 void main(void)
 {

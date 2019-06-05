@@ -18,7 +18,7 @@ void main(void)
 			break;
 		case'2':
 			system("cls");
-			printf("position of substr in str %d %x (0 - not)\n", find(str,substr), find(str, substr));
+			printf("adress of substr in str %x (0 - not)\n", find(str, substr));
 			break;
 		case'3':
 			system("cls");

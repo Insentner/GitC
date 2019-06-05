@@ -9,4 +9,5 @@ void sortStackArray()
 	readArray(arr, n);
 	sort(arr, n);
 	writeArray(arr, n);
+	printf("\n");
 }
