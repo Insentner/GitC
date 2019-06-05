@@ -1,7 +1,4 @@
-#include <stdio.h>
-
-_Bool isInArea(double x, double y);
-double f(double x);
+#include <head.h>
 
 int main(void)
 {
@@ -10,6 +7,7 @@ int main(void)
 	switch (_getch())
 	{
 	case'1':
+		system("cls");
 		printf("enter point's x and y for check with task1\nwrite x:\n");
 		scanf_s("%lf",&x);
 		printf("write y:\n");
@@ -24,6 +22,7 @@ int main(void)
 		}
 		break;
 	case'2':
+		system("cls");
 		printf("write x for task2 calculating\n");
 		scanf_s("%lf", &x);
 		printf("result of task2 calculating: %.4lf\n", f(x));
